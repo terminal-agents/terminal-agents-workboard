@@ -1,0 +1,4 @@
+node_modules/
+dist/
+.agent-workboard/state.json
+*.log

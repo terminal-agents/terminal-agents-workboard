@@ -1,0 +1,24 @@
+{
+  "tmuxPrefix": "awb",
+  "defaultAgent": "codex",
+  "agents": {
+    "codex": {
+      "label": "Codex",
+      "command": "codex",
+      "resumeCommand": "codex resume {sessionId}"
+    },
+    "claude": {
+      "label": "Claude Code",
+      "command": "claude",
+      "resumeCommand": "claude --resume {sessionId}"
+    },
+    "opencode": {
+      "label": "OpenCode",
+      "command": "opencode"
+    },
+    "gemini": {
+      "label": "Gemini CLI",
+      "command": "gemini"
+    }
+  }
+}
