@@ -1,18 +1,50 @@
 {
-  "name": "terminal-agent-workboard",
-  "version": "0.1.0",
-  "description": "A tmux-backed terminal workboard for routing input across multiple code-agent sessions.",
+  "name": "terminal-agents-workboard",
+  "version": "0.0.1",
+  "description": "A tmux-backed terminal workboard for routing input across multiple code-agent sessions (Claude Code, Codex, OpenCode, Gemini CLI).",
   "type": "module",
   "bin": {
     "workboard": "dist/index.js"
   },
+  "files": [
+    "dist/**/*.js",
+    "!dist/**/*.test.js",
+    "!dist/testFixtures.js",
+    "README.md",
+    "LICENSE",
+    ".agent-workboard.example.json"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "dev": "tsx src/index.ts",
     "start": "node dist/index.js",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "test": "tsx --test src/**/*.test.ts"
+    "test": "tsx --test src/**/*.test.ts",
+    "prepublishOnly": "npm run build"
   },
+  "keywords": [
+    "tmux",
+    "terminal",
+    "agent",
+    "claude",
+    "codex",
+    "opencode",
+    "gemini",
+    "ink",
+    "react",
+    "cli",
+    "workboard"
+  ],
+  "author": "Lellansin <lellansin@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lellansin/terminal-agents-workboard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Lellansin/terminal-agents-workboard/issues"
+  },
+  "homepage": "https://github.com/Lellansin/terminal-agents-workboard#readme",
   "engines": {
     "node": ">=20"
   },

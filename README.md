@@ -1,4 +1,4 @@
-# terminal-agent-workboard
+# terminal-agents-workboard
 
 `workboard` is a tmux-backed Node.js + TypeScript prototype for managing multiple code-agent conversations from one terminal workboard.
 
